@@ -1,0 +1,131 @@
+:root{
+    --black:#000000;
+}
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding:2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 5.5rem;
+    color:rgb(0, 0, 0);
+    padding:1rem;
+    margin:2rem 0;
+}
+
+.heading span{
+    color:rgb(0, 0, 0)
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background:rgb(152, 135, 23);
+    color:#fff;
+    padding:.9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background:#c3a919;
+}
+
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background:rgb(255, 174, 0);
+    padding:1rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+    font-size: 3rem;
+    color:rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+
+
+header .navbar a{
+    font-size: 2rem;
+    padding:0 1.5rem;
+    color:rgb(0, 0, 0);
+}
+
+header .navbar a:hover{
+    color:#000000
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color:rgb(255, 253, 253);
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color:#a5953b
+}
+
+.cerita{
+    background:rgb(255, 174, 0) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cerita .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.cerita .box-container .box{
+    flex:1 1 30rem;
+    box-shadow: 0 .5rem 2rem rgba(255, 249, 249, 0.204);
+    border-radius: 1rem;
+    border:.1rem solid rgba(255, 255, 255, 0.1);
+    position: relative;    
+}
+
+.cerita .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow:hidden;
+}
+
+.cerita .box-container .box .image img{
+    height:30rem;
+}
+
+.cerita .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.cerita .box-container .box .content{
+    padding:2rem;
+    text-align: center;
+}
