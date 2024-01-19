@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sifat Mustahil Allah</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="materipembelajaran.css">
+   
+ 
+
+</head>
+<body>
+    <div class="container">  
+        <div class="content-slide">
+        <div class="imgslide fade">
+            <div class="numberslide"></div>
+            <img src="images/48.jpg" alt="">
+        </div>
+        <div class="imgslide fade">
+            <div class="numberslide"></div>
+            <img src="images/67.jpg" alt="">
+        </div>
+        <div class="imgslide fade">
+            <div class="numberslide"></div>
+            <img src="images/66.jpg" alt="">
+        </div>
+        <div class="imgslide fade">
+            <div class="numberslide"></div>
+            <img src="images/65.jpg" alt="">
+        </div>
+        <div class="imgslide fade">
+            <div class="numberslide"></div>
+            <img src="images/64.jpg" alt="">
+        </div>
+        <div class="imgslide fade">
+            <div class="numberslide"></div>
+            <img src="images/63.jpg" alt="">
+        </div>
+        <div class="imgslide fade">
+            <div class="numberslide"></div>
+            <img src="images/62.jpg" alt="">
+        </div>
+ 
+        <div class="imgslide fade">
+            <div class="numberslide"></div>
+            <img src="images/61.jpg" alt="">
+        </div>
+ 
+        <div class="imgslide fade">
+            <div class="numberslide"></div>
+            <img src="images/60.jpg" alt="">
+        </div>
+ 
+        <div class="imgslide fade">
+            <div class="numberslide"></div>
+            <img src="images/59.jpg" alt="">
+        </div>
+        <div class="imgslide fade">
+            <div class="numberslide"></div>
+            <img src="images/58.jpg" alt="">
+        </div>
+        <div class="imgslide fade">
+            <div class="numberslide"></div>
+            <img src="images/57.jpg" alt="">
+        </div>
+        <div class="imgslide fade">
+            <div class="numberslide"></div>
+            <img src="images/56.jpg" alt="">
+        </div>
+        <div class="imgslide fade">
+            <div class="numberslide"></div>
+            <img src="images/55.jpg" alt="">
+        </div>
+        <div class="imgslide fade">
+            <div class="numberslide"></div>
+            <img src="images/54.jpg" alt="">
+        </div>
+        <div class="imgslide fade">
+            <div class="numberslide"></div>
+            <img src="images/53.jpg" alt="">
+        </div>
+        <div class="imgslide fade">
+            <div class="numberslide"></div>
+            <img src="images/52.jpg" alt="">
+        </div>
+        <div class="imgslide fade">
+            <div class="numberslide"></div>
+            <img src="images/51.jpg" alt="">
+        </div>
+        <div class="imgslide fade">
+            <div class="numberslide"></div>
+            <img src="images/50.jpg" alt="">
+        </div>
+        <div class="imgslide fade">
+            <div class="numberslide"></div>
+            <img src="images/49.jpg" alt="">
+        </div>
+
+
+         <a class="prev" onclick="nextslide(-1)">&#10094;</a>
+         <a class="next" onclick="nextslide(-1)">&#10095;</a>
+ 
+         </div>
+   
+    </div>
+    </div>
+    <script>
+       var slideIndex = 1;
+        showSlide(slideIndex);
+
+        function nextslide(n){
+            showSlide(slideIndex += n);
+        }
+        
+        function showSlide(n){
+            var i;
+            var slides = document.getElementsByClassName
+            ("imgslide");
+
+            if (n>slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i <slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            
+            slides[slideIndex - 1].style.display = "block"
+
+        }
+    </script>
+   
+</body>
+</html>

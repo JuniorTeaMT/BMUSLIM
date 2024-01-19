@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sifat Wajib Rasul</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="materipembelajaran.css">
+   
+ 
+
+</head>
+<body>
+    <div class="container">  
+        <div class="content-slide">
+        <div class="imgslide fade">
+            <div class="numberslide"></div>
+            <img src="images/88.jpg" alt="">
+        </div>
+
+        <div class="imgslide fade">
+            <div class="numberslide"></div>
+            <img src="images/89.jpg" alt="">
+        </div>
+ 
+        <div class="imgslide fade">
+            <div class="numberslide"></div>
+            <img src="images/90.jpg" alt="">
+        </div>
+ 
+        <div class="imgslide fade">
+            <div class="numberslide"></div>
+            <img src="images/91.jpg" alt="">
+        </div>
+
+
+         <a class="prev" onclick="nextslide(-1)">&#10094;</a>
+         <a class="next" onclick="nextslide(-1)">&#10095;</a>
+ 
+         </div>
+   
+    </div>
+    </div>
+    <script>
+       var slideIndex = 1;
+        showSlide(slideIndex);
+
+        function nextslide(n){
+            showSlide(slideIndex += n);
+        }
+        
+        function showSlide(n){
+            var i;
+            var slides = document.getElementsByClassName
+            ("imgslide");
+
+            if (n>slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i <slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            
+            slides[slideIndex - 1].style.display = "block"
+
+        }
+    </script>
+   
+</body>
+</html>
